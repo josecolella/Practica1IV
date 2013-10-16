@@ -20,11 +20,12 @@
 	$user->insertUser();
 
   $_SESSION['username'] = $user->getUserName();
+  echo "<script>alert('Registración Completada'); location.href='../index.php';</script>";
 
 	$user->close();
 
 
-	echo "<script>alert('Registración Completada'); location.href='../index.php';</script>";
+
 	//Redireccion a la pagina principal. El usuario tiene una sesion establecida
 	// $url = '../index.html';
 
