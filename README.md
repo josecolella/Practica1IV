@@ -128,10 +128,12 @@ variables del entorno OpenShift para poder conectarse e interactuar con
 las bases de datos.
 
 A continuación se puede ver que se ha conectado correctamente, ya que puede
-leer las noticias de última hora, especialmente la que se ha creado para esta
-clase.
+visualizar la página de administración de las noticias de última hora, 
+y además que podemos hacer operaciones CRUD sobre dichas noticias.
 
--> Aqui va la imagen de la noticia de ultima hora.
+!["Foto de la página de administración"](https://raw.github.com/josecolella/GII-2013/master/Screenshots/Practica1Photos/Screen%20Shot%202013-10-16%20at%2012.00.49.png)
+
+
 
 Este paso me tomo tiempo en completar, pero después de leer [este][ref1] enlace y [este][ref2],
 se me aclaro en como OpenShift trabaja con las bases de datos.
