@@ -127,12 +127,12 @@ git commit -m "Terminado la Practica 1"
 git push
 ```
 
-Lo que me hizo interesante fue cuando se ha ejecutado el *git push*,
+Lo que me fue interesante es cuando se ejecutada el *git push*,
 que como vemos en la siguiente imagen, ha primero desactivado
 los servicios *php*, *mysql*, *phpmyadmin*. Después los ha reactivado y puesto
 el codigo en el branch `master`.
 
-Imagen
+!["Resultado de git push"](https://raw.github.com/josecolella/GII-2013/master/Screenshots/Practica1Photos/Screen%20Shot%202013-10-16%20at%2009.07.31.png)
 
 
 * Visualizamos la aplicación accediendo a la dirección http proporcionada por
@@ -140,6 +140,9 @@ OpenShift cuando se ha registrado la aplicación.
 En mi caso la aplicación se accede en la dirección:
 http://periodico-ivblog.rhcloud.com/
 
+Como vemos en la siguiente imagen, la aplicación se ejecuta con éxito.
+
+!["Imagen de la aplicación"](https://raw.github.com/josecolella/GII-2013/master/Screenshots/Practica1Photos/Screen%20Shot%202013-10-16%20at%2011.47.46.png)
 
 * Para poder almacenar el codigo a Github, hay que agregar otro destino remoto
 en el cual se almacenará el codigo. Hay que recordar que el destino *remote*
@@ -154,6 +157,9 @@ y habiendo creado previamente un repositorio en Github, se almacena el
 codigo de nuestra aplicación con carpetas específicas de OpenShift en Github.
 
 Ya podemos compartir nuestro codigo y trabajar en conjunto a otras personas.
+
+El código de la aplicación se puede visualizar en el siguiente enlace:
+https://github.com/josecolella/Practica1IV
 
 
 
