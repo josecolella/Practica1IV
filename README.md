@@ -29,7 +29,7 @@ datos y la conexión a las mismas.
 > 6. Visualizar la aplicación y ver que todo funciona bien.
 > 7. Si se quiere almacenar el codigo en github para poder trabajar
 > con otros, agregamos una repositorio remoto adicional.
-> 8. Subimos el codigo a Github, donde la gente puede contribuir, y puedes
+> Subimos el codigo a Github, donde la gente puede contribuir, y puedes
 > compartir tu codigo.
 
 A continuación detallo los pasos previamente vistos.
@@ -142,11 +142,32 @@ http://periodico-ivblog.rhcloud.com/
 
 
 * Para poder almacenar el codigo a Github, hay que agregar otro destino remoto
-en el cual se almacenará el codigo.
-Usando el siguiente comando
+en el cual se almacenará el codigo. Hay que recordar que el destino *remote*
+lo tiene reservado el repositorio git que proporciona OpenShift.
+Usando el siguiente comando:
+
+```sh
+git remote add github git@github.com:josecolella/Practica1IV.git
+git push github master
+```
+y habiendo creado previamente un repositorio en Github, se almacena el
+codigo de nuestra aplicación con carpetas específicas de OpenShift en Github.
+
+Ya podemos compartir nuestro codigo y trabajar en conjunto a otras personas.
 
 
 
+
+###Conclusión
+
+Después de haber almacenado la aplicación en OpenShift, me he quedado con una
+visión positiva del despliegue de mi aplicación. Aunque tuve un poco de dificultad
+en la configuración con las bases de datos *MySQL* de OpenShift, el despliegue
+se ha podido hacer en relativamente poco tiempo. OpenShift me ha facilitado un
+monton la addición de herramientas a mi applicación en poco tiempo, reduciendo
+el tiempo que hubiera usado configurando el sistema, e invertirlo en
+la codificación de la aplicación. En verdad usaré dicho PaaS para futuros proyectos,
+y entiendo ya porque cloud computing esta tan popular con desarrolladores de software.
 
 
 
