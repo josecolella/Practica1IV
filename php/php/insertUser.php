@@ -10,7 +10,7 @@
 	 * @author Jose Miguel Colella <josecolella@correo.ugr.es>
 	 * @version 1.0
 	 */
-	session_start()
+	session_start();
 
 	include_once('UserVerification.php');
 
@@ -20,12 +20,11 @@
 	$user->insertUser();
 
   $_SESSION['username'] = $user->getUserName();
-  echo "<script>alert('Registración Completada'); location.href='../index.php';</script>";
 
 	$user->close();
 
 
-
+	echo "<script>alert('Registración Completada'); location.href='../index.php';</script>";
 	//Redireccion a la pagina principal. El usuario tiene una sesion establecida
 	// $url = '../index.html';
 
