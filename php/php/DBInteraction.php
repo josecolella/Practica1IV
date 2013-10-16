@@ -32,7 +32,14 @@
          */
         public function connect()
         {
-            $this->connection = new mysqli(self::$db_addr,self::$db_user,self::$db_pass,self::$db_selected);
+            $this->connection = new mysqli(
+              $_ENV['OPENSHIFT_MYSQL_DB_HOST'],
+              $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'],
+              $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'],
+              $_ENV['OPENSHIFT_APP_NAME'], // By default, app name == db name
+              $_ENV['OPENSHIFT_MYSQL_DB_PORT'],
+              $_ENV['OPENSHIFT_MYSQL_DB_SOCKET']
+            );
             if($this->connection->connect_errno) {
                 echo "Failed to connect to MySQL: (".$connection->connect_errno.") ".$connection->connect_error;
             }
