@@ -65,6 +65,20 @@ Para *phpmyadmin*, emplea el mismo mecanismo, como podemos ver en la siguiente i
 
 !["Credenciales para acceder a phpmyadmin"](https://raw.github.com/josecolella/GII-2013/master/Screenshots/Practica1Photos/Screen%20Shot%202013-10-15%20at%2023.14.48.jpg)
 
+Ya integrados estas herramientas dentro de nuestra aplicación, el próximo
+paso es crear las bases de datos. Usando *phpmyadmin* podemos crear las bases
+de datos con facilitad, definiendo detallamente con una interfaz las tablas que
+componen nuestra aplicación.
+
+Por ejemplo, para el periodico digital que se esta desplegando se requieren
+tres tablas; una que contenga a los usuarios que se han registrado, otra para
+los comentarios que dejan los usuarios, y finalmente una tabla que contiene
+las noticias de última hora.
+
+Como podemos en la siguiente imagen, *phpmyadmin* proporciona una interfaz
+robusta para un desarrollo ágil.
+
+
 * Ya podemos trabajar sobre la aplicación registrada usando el comando *git*.
 OpenShift proporciona un URL en la cual almacena el codigo que desplega.
 Usando el siguiente comando, he podido crear una copia local del codigo:
@@ -112,6 +126,12 @@ parametros en el constructor:
 Los parametros en el constructor garantizan que el PHP lea las
 variables del entorno OpenShift para poder conectarse e interactuar con
 las bases de datos.
+
+A continuación se puede ver que se ha conectado correctamente, ya que puede
+leer las noticias de última hora, especialmente la que se ha creado para esta
+clase.
+
+-> Aqui va la imagen de la noticia de ultima hora.
 
 Este paso me tomo tiempo en completar, pero después de leer [este][ref1] enlace y [este][ref2],
 se me aclaro en como OpenShift trabaja con las bases de datos.
