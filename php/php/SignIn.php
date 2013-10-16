@@ -16,15 +16,15 @@
         $user = new UserVerification();
         $user->connect();
         $user->setUser();
-        if($user->verifyUser()) { 
-        	if(strcmp($user->getUserName(), "Admin") == 0)
+        if($user->verifyUser()) {
+        	if(strcasecmp($user->getUserName(), "Admin") == 0)
         		echo "<script>alert('Has sido autentificado!'); location.href='../admin.php';</script>";
-        	else 
+        	else
         		echo "<script>alert('Has sido autentificado!'); location.href='../index.php';</script>";
           //Registramos la variable de usuario
           $_SESSION['username'] = $user->getUserName();
         }
-        else 
+        else
         	echo "<script>alert('Combinación de nombre de usuario y contraseña errónea.'); location.href='../index.php';</script>";
 
         $user->close();
