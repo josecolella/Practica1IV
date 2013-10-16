@@ -1,50 +1,33 @@
-﻿<?php
+<?php
 session_start();
-
 ?>
 <!DOCTYPE HTML>
 <html lang="ES">
 <head>
-	<!--En esta sección insertamos la parte sem&aacute;ntica del documento, como tipo de caracteres usados, el titulo, etc --> 
-	<title>The Granada Post: Todas las noticias en un lugar</title>
-	<meta name="Application-Name" content="The Granada Post"/>
-	<meta name="Author" content="Jose Miguel Colella"/>
-	<meta name="Description"content="En esta pagina se declara el contenido de la portada del periodico, y usaremos un fichero CSS para denotar su presentaci&oacute;n al usuario">
-	<meta name="Content-Language" content="es-ES"/>
 	<meta charset="UTF-8"/>
+	<meta name="Author" content="Jose Miguel Colella"/>
+	<meta name="Description"content="En esta pagina se declara el contenido de la seccion del periodico">
+	<meta name="Content-Language" content="es-ES"/>
+	
+	<title>Internacional: Noticias del todo el mundo</title>
+	
 	<!--Declaramos que se usar&aacute; un fichero css para describir la presentaci&oacute;n de la portada -->
-	<link rel="stylesheet" type="text/css" href="css/mainPage.css">
+	<link rel="stylesheet" type="text/css" href="css/sectionsPage.css">
 	<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAB6fm8AcYd4AC4qIgCZjnoA3+bcAPT49gDg6t8AMi4lAPn5+QBWW1kASUQ5ALamlABgXkcAem1YAPz9/ACDblsAiIqKAFtoZQDu9+sA2eLaAHp8agCDelsA2uDdAIt3ZAC2vLsAc2lWALm9vgBzkIIAztXPAPn8+gB3b1YApZZ4AOXu4wCSnpkAeW5cAGZcSwCKh3kADwwKAHt0XACzwJIAwcvEABEQDQCZpZwAq8WzALO6tgBfcWYApKucAOLl5ACkr6gA+/z7AGJbSQBXYVsArK6uAD0yKgA4PC0ANTw2AKGycwDW4NYA2N7ZABMTDgDy8/MAFhcRAEQ+MwDJzs4AcWhVAHVrVQBncG0ARkY5AEtCNgD8/PwADwsJAL/LvQCqvaYAh4qEAO3w6wBsX00AVVQ/ANzi3QCuo4YA3OfaAJ6opwCKl5AAjJeQAJq2pADg5OMAytTPAHmFfwDh6eAAtauDAIKBfADQ2s8A0NjSACAfGADR29IAp7atAKqYeADX4M8AepyOAFZKPQCdn58Ag3JiAJulnwBBPC8AxdXBAEFAMgBxYVQAVVhDAAICAgCGemgAuLu8ABgZGQDi6eEAd2hXAPj6+AB1bVQAusK/AOTq5AAhGxYAd2xaAJOflwA2NCoAvMy5AIeGegCYn44ANzQqANHZ1gBkW0wAgY+DACQiGQAPDgsAbV5MABESDgDu8+0Aw9S/ABMVDgDa4dwAyMvIAMjMywDw9/AAmLWaALDBtAD2+fYAo7CmAPj6+QCisakAd2pVAIx+bABOQTYAqa6pAIBpUgDR3NcARU5LAH9sWwC9ycMATkw8AP///wCXoJsAgZKEAMLGwwCZoZ4AZ2JQAKfAsgCao5sAoKOSAJykngDF0cAAKScgACsnIACbqp4AhXphAFxOQgDKz8wAytLMAC8sJgC4wLsAzdjMAPn6+gCMo5MAkn5kAE5ENwDLu6wA0t3SADo8KQB8cmUAbF1LANjk1QDw8fIAFhUQAJ+oogC1ubkALS8nAFpYRgDh6+EARUc4AKWsrgDR19MAIR4ZAE9FOwBmWUkAfGxdAOnw5wA7OSoA1d/ZAG57eACxtLQAVE8+ALK3tADv8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAm5ubm5s0zokzxMybm5ubm5ubm22uc45Exxdkxb2bm5ubm5dRtY+TC4J5rSK8EZubmxifV0e+tEtnOEhMfneIm5sIhzpdI3ASyIU5Apg8nJsapGNmFXazdUa7bgIPMGXDy4YHzU/GlHQuaslDoyg/UkIlSa8FQB2NhBMsfLgvISo7PU2lMXIgDrkGtg0ylcJQgHgQWm+SWWDPa79xaFjAVp4+CqYJYsEpmjVFVJlft1ubopFsA2mqQRmWsIqdHySbm6terHt6oAw3ypC6XLIWm5ubLX+MqH0ApzaDgSZOm5ubm5scsSeLK6EUHqlKm5ubm5ubm5tVAVNhGwSbm5ubmwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+	
 </head>
 <body>
-	<script type="text/javascript">
-	function validateUser() {
-		var username = document.getElementById('UserName').value;
-		var password = document.getElementById('Password').value;
-
-		if(username == null || username == ""){
-			alert("Campo [Nombre de Usuario] no puede esta vacio");
-			document.getElementById('UserName').focus();
-			return false;
-		}
-		if(password == null || password == ""){
-			alert("Campo [Contraseña] no puede estar vacio");
-			document.getElementById('Password').focus();
-			return false;
-		}
-	}
-	</script>
-	<noscript>
-		Tu navegador no soporta JavaScript
-	</noscript>
 	<script type="text/javascript">
 	var changeImage = function(newSrc) {
 		var img = document.getElementById('arrow');
 		img.src = newSrc;
 	}
 	</script>
+	<noscript>
+		Tu navegador no soporta JavaScript
+	</noscript>
 	<aside id="publicity">
 		<aside class="toppublicity">
 			<a href="http://www.mensfashiondepot.com/">
@@ -83,7 +66,6 @@ session_start();
 				//Lo escribimos
 				document.write(date.innerHTML);
 				</script>
-				<!--Nuevo apartado HTML que agrega botones para autentificarse-->
 				<?php
 				echo '<section id="Identification">';
 				echo '<nav>';
@@ -128,7 +110,6 @@ session_start();
 				echo '</nav>';
 				echo '</section>';
 				?>
-
 			</header>
 
 			<section>
@@ -142,22 +123,19 @@ session_start();
 				</nav>
 			</section>
 
-
+			<section class="sectionName">
+				<h2 class="redSection">Internacional</h2>
+			</section>
+			<section class="highlightedStory">
+				<h3 class="redSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Nuevo Gobierno en Italia</a></h3>
+				<p class="author">Escrito por Sergio Gonzalez</p>
+				<figure>
+					<img src="internacional/Compromiso_llegado_creacion_gobierno_20130427.png" alt="Primer Ministro de Italia, Enrico Letta"/>
+					<figcaption>Enrico Letta recibió una ovación de pie de los miembros de la coalición después de su discurso inaugural.</figcaption>
+				</figure>
+				<p>Líder del Partido Democrático adjunto (<abbr title="Partito Democratico">PD</abbr>), Enrico Letta, se convierte en primer ministro al frente de una "gran coalición" como partido Pueblo de la Libertad (<abbr title="Popolo della Liberta">PDL</abbr>) de Silvio Berlusconi. Entre otros nombramientos clave propuestos, el Banco de Italia director general Fabrizio Saccomanni encabezará el Ministerio de Economía potente y ex comisario europeo Emma Bonino se convertirá en ministro de Relaciones Exteriores...</p>
+			</section>
 			<section id="rightNewsGrouping">
-				<section class="breakingNews">
-					<h2>&Uacute;ltimas Noticias</h2>
-					<?php
-					ini_set('display_errors', true);
-					error_reporting(E_ALL);
-					include_once('php/BreakingNewsDB.php');
-					$breakingNews = new BreakingNewsDB();
-					$breakingNews->connect();
-					$breakingNews->printBreakingNews();
-					$breakingNews->close();
-
-					?>
-				</section>
-
 				<section class="smallAds"> 
 					<aside>
 						<a href="http://can-moveit.com">
@@ -174,76 +152,70 @@ session_start();
 							<img src="img/anunciospublicitarios2.png" alt="Anuncio Publicitario"/>
 						</a>
 					</aside>
+					<aside>
+						<a href="https://internetweekny.com/orders">
+							<img src="img/anunciospublicitarios4.png" alt="Anuncio Publicitario"/>
+						</a>
+					</aside>
+					<aside>
+						<a href="http://goo.gl/UpWPL">
+							<img src="img/anunciospublicitarios5.png" alt="Anuncio Publicitario"/>
+						</a>
+					</aside>
 				</section>
 			</section>
 
 			<section id="leftNewsGrouping">
 				<article class="newsStory">
-					<h3 class="headline redSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Nuevo Gobierno en Italia</a></h3>
-					<p class="author">Escrito por Sergio Gonzalez</p>
-					<figure>
-						<img src="internacional/Compromiso_llegado_creacion_gobierno_20130427.png" alt="Primer Ministro de Italia, Enrico Letta"/>
-						<figcaption>Enrico Letta recibió una ovación de pie de los miembros de la coalición después de su discurso inaugural.</figcaption>
-					</figure>
-					<p>Líder del Partido Democrático adjunto (<abbr title="Partito Democratico">PD</abbr>), Enrico Letta, se convierte en primer ministro al frente de una "gran coalición" como partido Pueblo de la Libertad (<abbr title="Popolo della Liberta">PDL</abbr>) de Silvio Berlusconi...</p>
-				</article>
-				<article class="newsStory">
-					<h3 class="headline blueSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">&iquest;Es austeridad la mejor opci&oacute;n para Espa&ntilde;a?</a></h3>
-					<p class="author">Escrito por Alvaro Moreno</p>
-					<p>Tome el Presidente José Manuel Barroso de la Comisión Europea. La Comisión se ve en algunas partes de Europa como el sumo sacerdocio de austeridad - más incluso que el Fondo Monetario Internacional - pero el señor Barroso dijo lo siguiente: "Aunque creo que esta política es fundamentalmente correcto, creo que ha llegado a su límite . "...</p>
-				</article>
-				<article class="newsStory">
-					<h3 class="headline creamSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Red 3G construido en Corea del Norte</a></h3>
-					<p class="author">Escrito por I&ntilde;aki Serrano</p>
-					<figure>
-						<img src="tecnologia/3G_establecido_Korea_Norte_20130426.png" alt="Estatua de Kim Jong Un">
-						<figcaption>Corea del Norte no puede acceder a Internet a través de 3G en sus teléfonos</figcaption>
-					</figure>
-					<p>Casi dos millones de norcoreanos no utilizar sólo la red 3G del país, <a href="http://goo.gl/IpnDP">informa un blog dedicado a noticias sobre tecnología en Corea del Norte</a>....</p>
-				</article>
-				<article class="newsStory">
-					<h3 class="headline greenSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Economía de EE.UU. crece 2,5% en el gasto de consumo boyante</a></h3>
-					<p class="author">Escrito por Fernando Lopez</p>
-					<p>La economía de EE.UU. creció a un ritmo anual del 2,5% en los tres primeros meses del año, ayudado por las fuertes cifras de gasto de los consumidores en dos años...</p>
-				</article>
-				<article class="newsStory">
-					<h3 class="headline blueSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">El fin de la crisis se retrasa a 2016</a></h3>
-					<p class="author">Escrito por Anna Marina</p>
-					<p>España tendrá dos años más para reducir el déficit público hasta el 3% del PIB, tras una negociación con Bruselas que se salda con otra subida de impuestos, con otra andanada de recortes, con otro empujón a las reformas estructurales pendientes. El ajuste presupuestario...</p>
-				</article>
-
-			</section>
-			<section id="centerNewsGrouping">
-				<article class="newsStory">
-					<h3 class="headline creamSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Cern recrear primera página Web para venerar principios ideales</a></h3>
-					<p class="author">Escrito por Patxi Hernandez</p>
-					<figure>
-						<img src="tecnologia/Cern_primera_pagina_web_20140430.png" alt="Foto del internet"/>
-						<figcaption>Perdido en el mundo: La primera página web. En ese momento, pocos imaginaron que el internet ser&iacute; tan ubicuo hoy en d&iacute;a.</figcaption>
-					</figure>
-					<p>El objetivo es preservar el hardware y el software asociado con el nacimiento de la web original.La World Wide Web fue desarrollado por el profesor Sir Tim Berners-Lee, mientras trabajaba en el CERN.</p>
-					<p>La iniciativa coincide con el 20 aniversario del centro de investigación que da la web para el mundo....</p>
-				</article>
-
-
-				<article class="newsStory">
-					<h3 class="headline redSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Madre Boston bombardeo sospsos lamenta la emigración a EE.UU.</a></h3>
+					<h3 class="headline redSection">Madre Boston bombardeo sospechosos lamenta la emigración a EE.UU.</h3>
 					<p class="author">Escrito por Cristina Calero</p>
 					<figure>
 						<img src="internacional/Madre_Boston_lamenta_emigracionUS_20130425.png" alt="Foto de la madre del terrorista del maraton de Boston"/>
 						<figcaption>Zubeidat Tsarnaeva: "Estados Unidos me ha quitados mis hijos"</figcaption>
 					</figure>
-					<p>La madre de los sospss de los atentados del maratón de Boston dice que lamenta que la familia emigró a los EE.UU., hace más de 10 años...</p>
+					<p>La madre de los sospechoss de los atentados del maratón de Boston dice que lamenta que la familia emigró a los EE.UU., hace más de 10 años...</p>
+				</article>
+				<article class="newsStory">
+					<h3 class="headline redSection">Elecciones en Islandia</h3>
+					<p class="author">Juancho Pancho</p>
+					<p>Partidos de la oposición de centro-derecha en Islandia se establecen para un retorno al poder con todos los votos contados después de las elecciones parlamentarias del sábado....</p>
+				</article>
+				
+				<article class="newsStory">
+					<h3 class="headline redSection">Los muertos en Bangladesh pasan 400</h3>
+					<p class="author">Escrito por Luis Ruiz</p>
+					<p>El número de personas que murieron en el derrumbe de un edificio en Bangladesh que albergaba fábricas de ropa la semana pasada ha pasado de 400, dijeron funcionarios....</p>
+				</article>
+				<article class="newsStory">
+					<h3 class="headline redSection">H7N9, virus aviario es una "amenaza grave" - advierten investigadores</h3>
+					<p class="author">Escrito por Zhou NiMa</p>
+					<p>Of the 126 people known to be infected so far, 24 have died, with many more still severely ill in hospital.</p>
+					<p>The H7N9 virus has not, however, yet proved able to spread between people - which limits its global threat....</p>
 				</article>
 
+			</section>
+			<section id="centerNewsGrouping">
 				<article class="newsStory">
-					<h3 class="headline greenSection"><a href="internacional/Compromiso_llegado_creacion_gobierno_20130427.php">Crecimiento del sector manufacturero de China se desacelera en Abr&iacute;l</a></h3>
-					<p class="author">Escrito por Maria Hahm</p>
+					<h3 class="headline redSection">Barack Obama dice prisión de Guantánamo debe cerrarse</h3>
+					<p class="author">Escrito por Jos&eacute; Colella</p>
 					<figure>
-						<img src="economia/China_decelerar_sector_productor_20130501.png" alt="Foto de una industria manufacturara"/>
-						<figcaption>Sectores de producción y de exportación han sido factores clave del crecimiento económico de China en los últimos años</figcaption>
+						<img src="internacional/US_cerrar_prision_Guantanamo_20130430.png" alt="Presidentes de los Estados Unidos, Barack Obama">
+						<figcaption>Presidente Obama: "Guantánamo no es necesario para mantener seguro a Estados Unidos ... es una herramienta de reclutamiento para los extremistas, sino que necesita ser cerrado"</figcaption>
 					</figure>
-					<p>China, la segunda mayor economía del mundo, se ha basado en gran medida en su sector exportador que ha impulsado su crecimiento económico....</p>
+					<p>El presidente Barack Obama ha prometido un nuevo impulso para cerrar la prisión de Guantánamo, en Cuba, en medio de una creciente huelga de hambre prisionero allí...</p>
+				</article>
+				<article class="newsStory">
+					<h3 class="headline redSection">Una niña de cinco años de edad muere en la region de India Madhya Pradesh</h3>
+					<p class="author">Escrito por Apu Nahal</p>
+					<p>Una niña de cinco años de edad, ha muerto dos semanas después de haber sido violada en el estado central indio de Madhya Pradesh.</p>
+					<p>La niña falleció el lunes por la noche, dijo el hospital en la ciudad de Nagpur, donde estaba siendo tratada.....</p>
+				</article>
+				<article class="newsStory">
+					<h3 class="headline redSection">Islamista francés capturado 'después de luchar "en Malí</h3>
+					<p class="author">Escrito por Muhammed Abel</p>
+					<p>Un converso islámico francés que amenazó a su país de origen ha sido capturado en el norte de Malí, al parecer después de haber luchado en el lado de los militantes.</p>
+
+					<p>Las tropas francesas capturaron Gilles Le Guen, que ahora se conoce con el nombre de Abdel Jelil, la noche del domingo al norte de Tombuctú, dijo el ejército...</p>
 				</article>
 			</section>
 
@@ -256,12 +228,12 @@ session_start();
 					<p>Jos&eacute; Miguel Colella</p>
 					<p class="Explanation"><a href="PeriodicoDigital2_JoseMiguelColella.pdf">C&oacute;mo se ha realizado</a></p>
 				</section>
-
+				
 				<section class="Subscribe">
 					<p><a href="formularioInscripcion.html">Suscribirse a la versi&oacute;n impresa</a></p>
-				</section>	
+				</section>
+				
 			</footer>
 		</section>
-
 	</body>
 	</html>

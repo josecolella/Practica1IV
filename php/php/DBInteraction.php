@@ -1,0 +1,63 @@
+<?php
+    //ini_set('display_errors', true);
+    //error_reporting(E_ALL);
+
+    /**La clase DBInteraction un abstraccion
+     * sobre las acciones minimas para interactuar
+     * con una base de datos, que seria el abrir
+     * una conexion con dicho base de datos, y cerrar
+     * dicha conexion
+     *
+     * @author Jose Miguel Colella
+     * @version 1.0
+     */
+
+    abstract class DBInteraction
+    {
+
+        //Estas tres variables son estaticas debido
+        //a que se accedera a la misma base de datos
+        //cuando se instancia esta clase
+        protected static $db_addr = 'mysql://127.3.110.129:3306/';
+        protected static $db_user = 'admintIXJRBR';
+        protected static $db_pass = 'n859n8sgjHpC';
+        protected static $db_selected = 'periodico';
+
+        protected $connection;
+
+
+        /**El metodo connect se conecta a la base de datos
+         *
+         * @return Conexion en la base de datos
+         */
+        public function connect()
+        {
+            $this->connection = new mysqli(self::$db_addr,self::$db_user,self::$db_pass,self::$db_selected);
+            if($this->connection->connect_errno) {
+                echo "Failed to connect to MySQL: (".$connection->connect_errno.") ".$connection->connect_error;
+            }
+
+        }
+
+        /**
+         * El metodo close cierra la conexion con la base de datos
+         * @return Conexion cerrada con la base de datos
+         */
+        public function close()
+        {
+            //Cerramos la conexion con la base de datos
+            $this->connection->close();
+        }
+
+
+        /**
+         * Metodo usado para ver el contenido de la base de datos
+         * Sera implementado por todas las clases que extiendan esta
+         * @return La base de datos entera
+         */
+        abstract protected function echoDataBase();
+
+    }
+
+
+    ?>
