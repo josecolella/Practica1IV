@@ -135,7 +135,15 @@ el codigo en el branch `master`.
 Imagen
 
 
-* Visualizamos la aplicación
+* Visualizamos la aplicación accediendo a la dirección http proporcionada por
+OpenShift cuando se ha registrado la aplicación.
+En mi caso la aplicación se accede en la dirección:
+http://periodico-ivblog.rhcloud.com/
+
+
+* Para poder almacenar el codigo a Github, hay que agregar otro destino remoto
+en el cual se almacenará el codigo.
+Usando el siguiente comando
 
 
 
