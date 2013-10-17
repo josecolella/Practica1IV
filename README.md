@@ -4,7 +4,7 @@ IV: Practica 1
 Autor: Jose Miguel Colella
 -------------------
 
-##Licencia de la aplicación: GPLv3
+##Licencia de la aplicación: [GPLv3](http://www.gnu.org/licenses/)
 
 
 En este documento hablo sobre el despliegue de una aplicación PHP,
