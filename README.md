@@ -4,6 +4,8 @@ IV: Practica 1
 Autor: Jose Miguel Colella
 -------------------
 
+##Licencia de la aplicación: GPLv3
+
 
 En este documento hablo sobre el despliegue de una aplicación PHP,
 en el PaaS llamado OpenShift de RedHat. Dentro de dicha aplicación
@@ -31,6 +33,8 @@ datos y la conexión a las mismas.
 > con otros, agregamos una repositorio remoto adicional.
 > Subimos el codigo a Github, donde la gente puede contribuir, y puedes
 > compartir tu codigo.
+> 8. Agregamos una licencia de software que clarifica como se puede trabajar
+con el código creado.
 
 A continuación detallo los pasos previamente vistos.
 
@@ -128,7 +132,7 @@ variables del entorno OpenShift para poder conectarse e interactuar con
 las bases de datos.
 
 A continuación se puede ver que se ha conectado correctamente, ya que puede
-visualizar la página de administración de las noticias de última hora, 
+visualizar la página de administración de las noticias de última hora,
 y además que podemos hacer operaciones CRUD sobre dichas noticias.
 
 !["Foto de la página de administración"](https://raw.github.com/josecolella/GII-2013/master/Screenshots/Practica1Photos/Screen%20Shot%202013-10-16%20at%2012.00.49.png)
@@ -183,9 +187,35 @@ Ya podemos compartir nuestro codigo y trabajar en conjunto a otras personas.
 El código de la aplicación se puede visualizar en el siguiente enlace:
 https://github.com/josecolella/Practica1IV
 
+* En el aspecto de licencias, hay muchas licencias de software disponible,
+desde licencias permisivas como MIT y Apache a las que son copyleft y los
+pioneros de software libre GPLv3 (GNU).
 
+Para esta aplicación he optado por una licencia GPLv3 debido a que quiero que
+futuras contribuciones o forks que usen mi código como fundación se reincorporen
+en la comunidad para poder aprender más sobre como mejorar un aspecto de
+la aplicación.
 
+Para aplicar la licencia sobre el proyecto hay que crear un fichero `LICENSE`,
+que contenga la licencia. Además, al comienzo de los ficheros de código hay
+que insertar el siguiente texto.
 
+```sh
+> Copyright (C) 2013  Jose Miguel Colella
+
+> This program is free software: you can redistribute it and/or modify
+> it under the terms of the GNU General Public License as published by
+> the Free Software Foundation, either version 3 of the License, or
+> (at your option) any later version.
+
+> This program is distributed in the hope that it will be useful,
+> but WITHOUT ANY WARRANTY; without even the implied warranty of
+> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+> GNU General Public License for more details.
+
+> You should have received a copy of the GNU General Public License
+> along with this program.  If not, see <http://www.gnu.org/licenses/>
+```
 ###Conclusión
 
 Después de haber almacenado la aplicación en OpenShift, me he quedado con una
