@@ -188,11 +188,11 @@ El código de la aplicación se puede visualizar en el siguiente enlace:
 https://github.com/josecolella/Practica1IV
 
 * En el aspecto de licencias, hay muchas licencias de software disponible,
-desde licencias permisivas como MIT y Apache a las que son copyleft y los
+desde licencias permisivas como MIT y Apache, a las que son copyleft y los
 pioneros de software libre GPLv3 (GNU).
 
 Para esta aplicación he optado por una licencia GPLv3 debido a que quiero que
-futuras contribuciones o forks que usen mi código como fundación se reincorporen
+futuras contribuciones o forks que usen mi código como fundación, se reincorporen
 en la comunidad para poder aprender más sobre como mejorar un aspecto de
 la aplicación.
 
