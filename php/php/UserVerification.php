@@ -1,15 +1,32 @@
-<?php 
+<!--
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+-->
+
+<?php
 
     //ini_set('display_errors', true);
     //error_reporting(E_ALL);
     include_once('DBInteraction.php');
 
     /**
-     * La clase UserVerification representa  
-     * la clase que se  inserta los usuarios nuevos, 
-     * y ademas crea la sesion para los usuarios que 
+     * La clase UserVerification representa
+     * la clase que se  inserta los usuarios nuevos,
+     * y ademas crea la sesion para los usuarios que
      * ya tienen acceso
-     * 
+     *
      * @author Jose Miguel Colella <josecolella@correo.ugr.es>
      * @version 1.0
      */
@@ -30,7 +47,7 @@
         private $isPasswordEqual;
 
         /**
-         * El metodo setInsertVariables() inicializa las variables para su 
+         * El metodo setInsertVariables() inicializa las variables para su
          * insercion en la base de datos
          */
         public function setInsertVariables()
@@ -60,10 +77,10 @@
                 $this->connection->query($insertQuery);
             }
             else echo "<script>alert('El nombre de usuario no esta disponible'); location.href='../formularioDiario.html';</script>";
-                
+
         }
         /**
-         * El metodo setUser() inicializa las variables 
+         * El metodo setUser() inicializa las variables
          * para el usuario
          */
         public function setUser()
@@ -80,7 +97,7 @@
 
             $isUserValid = false;
             $findUser = "SELECT * FROM `Users` WHERE `username`='$this->username' AND `password` = SHA1('$this->password')";
-            
+
             $result = $this->connection->query($findUser);
             $row = $result->fetch_array(MYSQLI_ASSOC);
 
@@ -107,7 +124,7 @@
                 echo "DOB: " . $row['dob'] . "<br/>";
                 echo "Email: " . $row['email'] . "<br/>";
                 echo "Password: " . $row['password'] . "<br/>";
-                
+
                 echo "<br>";
             }
         }
@@ -123,13 +140,13 @@
 
             if($result->num_rows > 0)
                 return true;
-            else 
+            else
                 return false;
         }
         /**
          * El metodo getUserName() devuelve el nombre de
          * usuario. Esto se usa para establecer la sesion.
-         * 
+         *
          * @return $username;
          */
         public function getUserName()
