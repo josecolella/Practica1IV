@@ -1,20 +1,39 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+
+
 	/*
 	En este fichero declaramos como se estructura la noticia del periodico digital
-	
+
 
  	@Author: Jose Miguel;
 
  	*/
-	
-/*********************************************************************************	
+
+/*********************************************************************************
 	/*La siguiente secciones cambia la presentacion de los enlaces*/
  	a:link{color: #000000; text-decoration: none;}
  	a:visited{color: #000000;}
  	a:hover{color:blue; text-decoration:underline;} /*When hover is active the color is light blue */
- 	a:active{color:#FF0000;} /*When selected it turns into darker blue*/ 	
+ 	a:active{color:#FF0000;} /*When selected it turns into darker blue*/
 
- 	
-/*********************************************************************************/	
+
+/*********************************************************************************/
 /*Antes de comenzar a configurar los ID y las clases establezco unas reglas para Cabeceras, Titulos, y los parrafos*/
  	header{
  		text-align: center;
@@ -25,7 +44,7 @@
  		border-color: #7ACC52;
  		border-width:5px;
  	}
- 	
+
  	h1{
  		font-size: 74px;
  		margin:5px;
@@ -60,9 +79,9 @@
  		text-align:justify;
  	}
 
-/*********************************************************************************	
+/*********************************************************************************
 	/*La primera estructura que hay que definir es la publicidad*/
-	
+
  	/* Tenemos el ID de puplicity que denota la publicidad*/
  	#publicity
  	{
@@ -82,7 +101,7 @@
  		border-right-color:black;
  		border-right-width: 5px;
  		width:125px;
- 		background-color: white;	
+ 		background-color: white;
  		float:left;
  		border-bottom: inset;
  		border-bottom-color: black;
@@ -99,7 +118,7 @@
  		border-left-color:black;
  		border-left-width: 5px;
  		width:125px;
- 		background-color: white;	 	
+ 		background-color: white;
  		float:right;
  		border-bottom: inset;
  		border-bottom-color: black;
@@ -137,12 +156,12 @@
 #Identification nav ul {
 	border: outset;
 	border-color: black;
-	background: #efefef; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	background: #efefef;
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0 0px;  
+	padding: 0 0px;
 	list-style: none;
 	position: relative;
 	display: inline-table;
@@ -181,14 +200,14 @@
 	position: absolute; top: 100%;
 }
 #Identification nav ul ul li {
-	float: none; 
+	float: none;
 	border-top: 1px solid #6b727c;
 	border-bottom: 1px solid #575f6a; position: relative;
 }
 #Identification nav ul ul li a {
 	padding: 15px 40px;
 	color: black;
-}	
+}
 #Identification nav ul ul li a:hover {
 	background: #4b545f;
 }
@@ -226,17 +245,17 @@
  	{
  		background-color: #D64F4F;
  	}
- 	
+
  	.greenSection
  	{
  		background-color: #A6CF7C;
  	}
- 	
+
  	.creamSection
  	{
  		background-color: #CBC18A;
  	}
- 	
+
 
  	#Tabs ul{
  		list-style: none;
@@ -286,7 +305,7 @@
  		margin-top: 2px;
 
  	}
- 	
+
 
  	.leftNewsGrouping
  	{
@@ -297,13 +316,13 @@
  		margin-left: 135px;
  		padding-bottom: 5px;
 
- 		
 
- 	} 
+
+ 	}
 
  	.leftNewsGrouping h4
  	{
- 		font-family: 'Arbutus Slab', serif; 
+ 		font-family: 'Arbutus Slab', serif;
  		font-size: 25px;
  		text-align: left;
  		border-bottom: double;
@@ -322,7 +341,7 @@
  	}
 
 	/*Definimos una clase para la noticia destacada*/
- 	.highlightedStory 
+ 	.highlightedStory
  	{
  		text-align: center;
  		float:left;
@@ -385,7 +404,7 @@
 
  	}
 
- 	#rightNewsGrouping p 
+ 	#rightNewsGrouping p
  	{
  		text-align: left;
  		padding: 10px;
@@ -421,23 +440,23 @@
  		border-color: black;
  		width:193px;
 
- 		
+
  	}
- 	
+
 	/*Definimos una clase para los comentarios de los usuarios*/
  	.viewerOpinion
  	{
- 		
+
  		/*The overflow is used for scrollbar*/
  		overflow: scroll;
  		width:460px;
  		height: 150px;
  		margin-bottom: 1px;
- 		background-color: #fff;     
+ 		background-color: #fff;
  		margin-left: 5px;
  		text-align:left;
  	}
- 
+
  	.oldCommentary {
  		margin-top: 5px;
  		border-radius:25px;
@@ -464,7 +483,7 @@
  		border-color: #474719;
 
  	}
- 	
+
  	figcaption
  	{
  		font-family: 'Arbutus Slab', serif;
@@ -525,11 +544,11 @@
  		position: relative;
  		clear:both;
  		margin-left: 134px;
- 		background-color: white; 
+ 		background-color: white;
  		border: 5px outset #727258;
  		padding: 8px;
 		padding-bottom: 20px;
 		width: 704px;
-		
+
 	}
 /********************************************************************************/

@@ -1,11 +1,27 @@
-﻿<?php
-session_start();
+﻿/*
+Copyright (C) 2013  Jose Miguel Colella
 
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+<?php
+session_start();
 ?>
 <!DOCTYPE HTML>
 <html lang="ES">
 <head>
-	<!--En esta sección insertamos la parte sem&aacute;ntica del documento, como tipo de caracteres usados, el titulo, etc --> 
+	<!--En esta sección insertamos la parte sem&aacute;ntica del documento, como tipo de caracteres usados, el titulo, etc -->
 	<title>The Granada Post: Todas las noticias en un lugar</title>
 	<meta name="Application-Name" content="The Granada Post"/>
 	<meta name="Author" content="Jose Miguel Colella"/>
@@ -71,9 +87,9 @@ session_start();
 			<h1><a href="index.php">The Granada Post</a></h1>
 			<script type="text/javascript">
 				//Creamos una tag p donde esta la fecha
-				var date = document.createElement("p"); 
+				var date = document.createElement("p");
 				//Le asignamos la clase date
-				date.className = "date"; 
+				date.className = "date";
 				//Creamos un objeto fecha
 				var currentDate = new Date();
 				//Creamos un nodo donde se ubica la fecha
@@ -97,7 +113,7 @@ session_start();
 					echo '<li>';
 					echo '<form action="php/LogOut.php" method="post">';
 					echo '<a href="#">';
-					echo '<input type="submit" value="Cerrar Sesi&oacute;n"/>'; 
+					echo '<input type="submit" value="Cerrar Sesi&oacute;n"/>';
 					echo '</a>';
 					echo '</form>';
 					echo '</li>';
@@ -158,7 +174,7 @@ session_start();
 					?>
 				</section>
 
-				<section class="smallAds"> 
+				<section class="smallAds">
 					<aside>
 						<a href="http://can-moveit.com">
 							<img src="img/anunciospublicitario3.png" alt="Anuncio Publicitario"/>
@@ -259,7 +275,7 @@ session_start();
 
 				<section class="Subscribe">
 					<p><a href="formularioInscripcion.html">Suscribirse a la versi&oacute;n impresa</a></p>
-				</section>	
+				</section>
 			</footer>
 		</section>
 

@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
 <!DOCTYPE HTML>
 <!--Este fichero contiene la portada del periodico-->
 <html lang="ES">
@@ -7,10 +24,10 @@
 	<meta name="Author" content="Jose Miguel Colella"/>
 	<meta name="Description"content="En esta pagina se declara el contenido del formulario para inscribirse al peridico"/>
 	<meta name="Content-Language" content="es-ES"/>
-	
+
 	<title>Subscripci&oacute;n al Periodico</title>
-	
-	
+
+
 	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/ico" href="favicon.ico"/>
@@ -44,9 +61,9 @@
 			<h1><a href="index.php">The Granada Post</a></h1>
 			<script type="text/javascript">
 				//Creamos una tag p donde esta la fecha
-				var date = document.createElement("p"); 
+				var date = document.createElement("p");
 				//Le asignamos la clase date
-				date.className = "date"; 
+				date.className = "date";
 				//Creamos un objeto fecha
 				var currentDate = new Date();
 				//Creamos un nodo donde se ubica la fecha
@@ -100,7 +117,7 @@
 					</ul>
 				</nav>
 			</section>
-			
+
 			<fieldset>
 				<fieldset>
 					<legend>Datos Personales</legend>
@@ -108,7 +125,7 @@
 						<p><label for="FirstNameText" class="label">Nombre: <sup><strong>*</strong></sup></label>
 							<input type="text" id="FirstNameText"  class="field" value="" placeholder="Tu nombre" required/>
 						</p>
-						
+
 						<p>
 							<label for="LastNameText" class="label">Apellido: <sup><strong>*</strong></sup></label>
 							<input type="text" id="LastNameText"  value="" class="field" placeholder="Tu apellido"/>
@@ -212,10 +229,10 @@
 							<input type="text" maxlength="50" id="NameOnCard"/>
 						</p>
 						<p>
-							<input type="submit" id="ConfirmOrder" value="Confirmar Orden"/>		
+							<input type="submit" id="ConfirmOrder" value="Confirmar Orden"/>
 						</p>
 						<p class="Rules">Campos con <sup><strong>*</strong></sup> son mandatorios</p>
-						
+
 					</form>
 
 				</fieldset>

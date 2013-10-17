@@ -1,21 +1,39 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+
 	/*
-	En este fichero declaramos como se estructura la pagina index.html que 
+	En este fichero declaramos como se estructura la pagina index.html que
 	representa la portada del periodico digital
-	
+
  	@Author: Jose Miguel;
-	
+
 
  	*/
 
-/*********************************************************************************	
+/*********************************************************************************
 /*La siguiente secciones cambia la presentacion de los enlaces*/
 a:link{color: #000000; text-decoration: none;}
 a:visited{color: black;}
 a:hover{color:blue; text-decoration:underline;} /*When hover is active the color is light blue */
-a:active{color:#FF0000;} /*When selected it turns into darker blue*/ 	
+a:active{color:#FF0000;} /*When selected it turns into darker blue*/
 /*********************************************************************************/
 
-/*********************************************************************************/	
+/*********************************************************************************/
 /*Antes de comenzar a configurar los ID y las clases establezco unas reglas para Cabeceras, Titulos, y los parrafos*/
 header{
 	text-align: center;
@@ -104,12 +122,12 @@ p{
 #Identification nav ul {
 	border: outset;
 	border-color: black;
-	background: #efefef; 
-	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	background: #efefef;
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%);
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-	padding: 0 0px;  
+	padding: 0 0px;
 	list-style: none;
 	position: relative;
 	display: inline-table;
@@ -148,14 +166,14 @@ p{
 	position: absolute; top: 100%;
 }
 #Identification nav ul ul li {
-	float: none; 
+	float: none;
 	border-top: 1px solid #6b727c;
 	border-bottom: 1px solid #575f6a; position: relative;
 }
 #Identification nav ul ul li a {
 	padding: 15px 40px;
 	color: black;
-}	
+}
 #Identification nav ul ul li a:hover {
 	background: #4b545f;
 }
@@ -214,7 +232,7 @@ label
 	border-right-color:black;
 	border-right-width: 5px;
 	width:125px;
-	background-color: white;	
+	background-color: white;
 	float:left;
 	border-bottom: inset;
 	border-bottom-color: black;
@@ -231,7 +249,7 @@ label
 	border-left-color:black;
 	border-left-width: 5px;
 	width:125px;
-	background-color: white;	 	
+	background-color: white;
 	float:right;
 	border-bottom: inset;
 	border-bottom-color: black;
@@ -395,7 +413,7 @@ label
 .newsStory a:link{color: black; text-decoration: none;}
 .newsStory a:visited{color:#474719;}
 .newsStory a:hover{color:blue; text-decoration:underline;} /*When hover is active the color is light blue */
-.newsStory a:active{color:#FF0000;} /*When selected it turns into darker blue*/ 	
+.newsStory a:active{color:#FF0000;} /*When selected it turns into darker blue*/
 
 .author{
 	font-size:14px;
@@ -478,7 +496,7 @@ footer{
 	position: relative;
 	clear:both;
 	margin-left: 134px;
-	background-color: white; 
+	background-color: white;
 	border: 5px outset #727258;
 	padding: 8px;
 	padding-bottom: 20px;

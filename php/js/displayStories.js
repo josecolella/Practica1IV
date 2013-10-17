@@ -1,3 +1,22 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+
+
 /**
  * Funcion para que aparezca una ventana emergentes con las noticias
  * relacionadas de la misma
@@ -32,7 +51,7 @@
   windowObjectReference.document.write('<li>');
   windowObjectReference.document.write('<a href="http://www.bbc.co.uk/news/world-middle-east-22298563">');
   windowObjectReference.document.write('<p>&iquest;Pueden cooperar el nuevo gobierno de Italia creado de partidos de derecha e izquierda?</p>');
-  windowObjectReference.document.write('</a>'); 
+  windowObjectReference.document.write('</a>');
   windowObjectReference.document.write('</li>');
   windowObjectReference.document.write('</section>');
   windowObjectReference.focus();

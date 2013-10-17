@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
 <?php
 	//Revisar que solo el administrador pueda ver esta pagina
 session_start();
@@ -21,10 +38,10 @@ session_start();
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAB6fm8AcYd4AC4qIgCZjnoA3+bcAPT49gDg6t8AMi4lAPn5+QBWW1kASUQ5ALamlABgXkcAem1YAPz9/ACDblsAiIqKAFtoZQDu9+sA2eLaAHp8agCDelsA2uDdAIt3ZAC2vLsAc2lWALm9vgBzkIIAztXPAPn8+gB3b1YApZZ4AOXu4wCSnpkAeW5cAGZcSwCKh3kADwwKAHt0XACzwJIAwcvEABEQDQCZpZwAq8WzALO6tgBfcWYApKucAOLl5ACkr6gA+/z7AGJbSQBXYVsArK6uAD0yKgA4PC0ANTw2AKGycwDW4NYA2N7ZABMTDgDy8/MAFhcRAEQ+MwDJzs4AcWhVAHVrVQBncG0ARkY5AEtCNgD8/PwADwsJAL/LvQCqvaYAh4qEAO3w6wBsX00AVVQ/ANzi3QCuo4YA3OfaAJ6opwCKl5AAjJeQAJq2pADg5OMAytTPAHmFfwDh6eAAtauDAIKBfADQ2s8A0NjSACAfGADR29IAp7atAKqYeADX4M8AepyOAFZKPQCdn58Ag3JiAJulnwBBPC8AxdXBAEFAMgBxYVQAVVhDAAICAgCGemgAuLu8ABgZGQDi6eEAd2hXAPj6+AB1bVQAusK/AOTq5AAhGxYAd2xaAJOflwA2NCoAvMy5AIeGegCYn44ANzQqANHZ1gBkW0wAgY+DACQiGQAPDgsAbV5MABESDgDu8+0Aw9S/ABMVDgDa4dwAyMvIAMjMywDw9/AAmLWaALDBtAD2+fYAo7CmAPj6+QCisakAd2pVAIx+bABOQTYAqa6pAIBpUgDR3NcARU5LAH9sWwC9ycMATkw8AP///wCXoJsAgZKEAMLGwwCZoZ4AZ2JQAKfAsgCao5sAoKOSAJykngDF0cAAKScgACsnIACbqp4AhXphAFxOQgDKz8wAytLMAC8sJgC4wLsAzdjMAPn6+gCMo5MAkn5kAE5ENwDLu6wA0t3SADo8KQB8cmUAbF1LANjk1QDw8fIAFhUQAJ+oogC1ubkALS8nAFpYRgDh6+EARUc4AKWsrgDR19MAIR4ZAE9FOwBmWUkAfGxdAOnw5wA7OSoA1d/ZAG57eACxtLQAVE8+ALK3tADv8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAm5ubm5s0zokzxMybm5ubm5ubm22uc45Exxdkxb2bm5ubm5dRtY+TC4J5rSK8EZubmxifV0e+tEtnOEhMfneIm5sIhzpdI3ASyIU5Apg8nJsapGNmFXazdUa7bgIPMGXDy4YHzU/GlHQuaslDoyg/UkIlSa8FQB2NhBMsfLgvISo7PU2lMXIgDrkGtg0ylcJQgHgQWm+SWWDPa79xaFjAVp4+CqYJYsEpmjVFVJlft1ubopFsA2mqQRmWsIqdHySbm6terHt6oAw3ypC6XLIWm5ubLX+MqH0ApzaDgSZOm5ubm5scsSeLK6EUHqlKm5ubm5ubm5tVAVNhGwSbm5ubmwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
 </head>
 <script>
-function finalize()
-{
-	location.href='./index.php';
-}
+  function finalize()
+  {
+   location.href='./index.php';
+ }
 </script>
 
 <body>
@@ -45,22 +62,22 @@ function finalize()
 				date.appendChild(dateNode);
 				//Lo escribimos
 				document.write(date.innerHTML);
-				</script>
-				<noscript>
-					Tu navegador no soporta JavaScript
-				</noscript>
-			</header>
-			<?php
-			ini_set('display_errors', true);
-			error_reporting(E_ALL);
-			include_once('php/BreakingNewsDB.php');
-			$breakingNews = new BreakingNewsDB();
-			$breakingNews->connect();
-			$breakingNews->echoDataBase();
-			$breakingNews->close();
+      </script>
+      <noscript>
+       Tu navegador no soporta JavaScript
+     </noscript>
+   </header>
+   <?php
+   ini_set('display_errors', true);
+   error_reporting(E_ALL);
+   include_once('php/BreakingNewsDB.php');
+   $breakingNews = new BreakingNewsDB();
+   $breakingNews->connect();
+   $breakingNews->echoDataBase();
+   $breakingNews->close();
 
 
-			?>
-		</section>
-	</body>
-	</html>
+   ?>
+ </section>
+</body>
+</html>

@@ -1,3 +1,20 @@
+/*
+Copyright (C) 2013  Jose Miguel Colella
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
 <?php
 	session_start();
 ?>
@@ -8,15 +25,15 @@
 	<meta name="Author" content="Jose Miguel Colella"/>
 	<meta name="Description"content="En esta pagina se declara el contenido de la seccion del periodico">
 	<meta name="Content-Language" content="es-ES"/>
-	
+
 	<title>Internacional: Noticias del todo el mundo</title>
-	
+
 	<!--Declaramos que se usar&aacute; un fichero css para describir la presentaci&oacute;n de la portada -->
 	<link rel="stylesheet" type="text/css" href="css/sectionsPage.css">
 	<link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Arbutus+Slab&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAB6fm8AcYd4AC4qIgCZjnoA3+bcAPT49gDg6t8AMi4lAPn5+QBWW1kASUQ5ALamlABgXkcAem1YAPz9/ACDblsAiIqKAFtoZQDu9+sA2eLaAHp8agCDelsA2uDdAIt3ZAC2vLsAc2lWALm9vgBzkIIAztXPAPn8+gB3b1YApZZ4AOXu4wCSnpkAeW5cAGZcSwCKh3kADwwKAHt0XACzwJIAwcvEABEQDQCZpZwAq8WzALO6tgBfcWYApKucAOLl5ACkr6gA+/z7AGJbSQBXYVsArK6uAD0yKgA4PC0ANTw2AKGycwDW4NYA2N7ZABMTDgDy8/MAFhcRAEQ+MwDJzs4AcWhVAHVrVQBncG0ARkY5AEtCNgD8/PwADwsJAL/LvQCqvaYAh4qEAO3w6wBsX00AVVQ/ANzi3QCuo4YA3OfaAJ6opwCKl5AAjJeQAJq2pADg5OMAytTPAHmFfwDh6eAAtauDAIKBfADQ2s8A0NjSACAfGADR29IAp7atAKqYeADX4M8AepyOAFZKPQCdn58Ag3JiAJulnwBBPC8AxdXBAEFAMgBxYVQAVVhDAAICAgCGemgAuLu8ABgZGQDi6eEAd2hXAPj6+AB1bVQAusK/AOTq5AAhGxYAd2xaAJOflwA2NCoAvMy5AIeGegCYn44ANzQqANHZ1gBkW0wAgY+DACQiGQAPDgsAbV5MABESDgDu8+0Aw9S/ABMVDgDa4dwAyMvIAMjMywDw9/AAmLWaALDBtAD2+fYAo7CmAPj6+QCisakAd2pVAIx+bABOQTYAqa6pAIBpUgDR3NcARU5LAH9sWwC9ycMATkw8AP///wCXoJsAgZKEAMLGwwCZoZ4AZ2JQAKfAsgCao5sAoKOSAJykngDF0cAAKScgACsnIACbqp4AhXphAFxOQgDKz8wAytLMAC8sJgC4wLsAzdjMAPn6+gCMo5MAkn5kAE5ENwDLu6wA0t3SADo8KQB8cmUAbF1LANjk1QDw8fIAFhUQAJ+oogC1ubkALS8nAFpYRgDh6+EARUc4AKWsrgDR19MAIR4ZAE9FOwBmWUkAfGxdAOnw5wA7OSoA1d/ZAG57eACxtLQAVE8+ALK3tADv8/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAm5ubm5s0zokzxMybm5ubm5ubm22uc45Exxdkxb2bm5ubm5dRtY+TC4J5rSK8EZubmxifV0e+tEtnOEhMfneIm5sIhzpdI3ASyIU5Apg8nJsapGNmFXazdUa7bgIPMGXDy4YHzU/GlHQuaslDoyg/UkIlSa8FQB2NhBMsfLgvISo7PU2lMXIgDrkGtg0ylcJQgHgQWm+SWWDPa79xaFjAVp4+CqYJYsEpmjVFVJlft1ubopFsA2mqQRmWsIqdHySbm6terHt6oAw3ypC6XLIWm5ubLX+MqH0ApzaDgSZOm5ubm5scsSeLK6EUHqlKm5ubm5ubm5tVAVNhGwSbm5ubmwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
-	
+
 </head>
 <body>
 	<script type="text/javascript">
@@ -54,9 +71,9 @@
 			<h1><a href="index.php">The Granada Post</a></h1>
 			<script type="text/javascript">
 				//Creamos una tag p donde esta la fecha
-				var date = document.createElement("p"); 
+				var date = document.createElement("p");
 				//Le asignamos la clase date
-				date.className = "date"; 
+				date.className = "date";
 				//Creamos un objeto fecha
 				var currentDate = new Date();
 				//Creamos un nodo donde se ubica la fecha
@@ -79,7 +96,7 @@
 					echo '<li>';
 					echo '<form action="php/LogOut.php" method="post">';
 						echo '<a href="#">';
-							echo '<input type="submit" value="Cerrar Sesi&oacute;n"/>'; 
+							echo '<input type="submit" value="Cerrar Sesi&oacute;n"/>';
 						echo '</a>';
 					echo '</form>';
 					echo '</li>';
@@ -137,7 +154,7 @@
 				<p>Líder del Partido Democrático adjunto (<abbr title="Partito Democratico">PD</abbr>), Enrico Letta, se convierte en primer ministro al frente de una "gran coalición" como partido Pueblo de la Libertad (<abbr title="Popolo della Liberta">PDL</abbr>) de Silvio Berlusconi. Entre otros nombramientos clave propuestos, el Banco de Italia director general Fabrizio Saccomanni encabezará el Ministerio de Economía potente y ex comisario europeo Emma Bonino se convertirá en ministro de Relaciones Exteriores...</p>
 			</section>
 			<section id="rightNewsGrouping">
-				<section class="smallAds"> 
+				<section class="smallAds">
 					<aside>
 						<a href="http://can-moveit.com">
 							<img src="img/anunciospublicitario3.png" alt="Anuncio Publicitario"/>
